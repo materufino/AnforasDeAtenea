@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    text-shadow: 1px 0px 20px #858179;
+
+}
+
+.hero {
+    height: 90vh;
+    background-image: url(../../Assets/FondoHero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.barraDivisoria {
+    width: 100%;
+    margin: auto;
+    background-image: url(../../Assets/finca.jpg);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+@media(min-width:37.500em) {
+    h1 {
+        transition: 1s;
+        letter-spacing: 5px;
+    }
+}
+
+
+@media(min-width:48rem) {
+    h1 {
+        letter-spacing: 10px;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 61.93em) {
+    h1 {
+        transition: 1s;
+    }
+}
