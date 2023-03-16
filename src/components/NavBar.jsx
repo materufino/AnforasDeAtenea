@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import estilos from "./estilos/NavBar.module.css"
-import { f39e } from "@fortawesome/free-solid-svg-icons"
+
 
 
 

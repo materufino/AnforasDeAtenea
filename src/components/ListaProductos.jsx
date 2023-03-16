@@ -1,7 +1,7 @@
 import frantoio from '../Assets/frantoioVidrio.jpg'
 import empeltre from '../Assets/arbequinaPlastico.jpg'
 import arbequina from '../Assets/arbequinaVidrio.jpg'
-import blend from '../Assets/arbequinaPlastico.jpg'
+import blend from '../Assets/blendGrande.jpg'
 
 
 
