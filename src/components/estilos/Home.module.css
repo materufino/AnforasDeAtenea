@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 
 
@@ -31,11 +33,17 @@ h1 {
     background-image: url(../../Assets/finca.jpg);
     height: 100px;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     margin-bottom: 10px;
 
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
 }
 
 

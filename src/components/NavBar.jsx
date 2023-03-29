@@ -1,9 +1,16 @@
 import estilos from "./estilos/NavBar.module.css"
-
+import { useNavigate } from "react-router-dom";
 
 
 
 const NavBar = () => {
+
+    const navigate = useNavigate();
+
+    const cambiaRuta = (path) => {
+        // Hacemos más cosas
+        navigate(path);
+    }
 
     return (
         <>
@@ -11,10 +18,10 @@ const NavBar = () => {
 
                 <ul class={estilos.secciones}>
 
-                    <li class="inicio"><a href="index.html">INICIO</a></li>
-                    <li class="historia"><a href="historia.html">HISTORIA</a></li>
-                    <li class="producto"><a href="producto.html">NUESTRO PRODUCTO</a></li>
-                    <li class="tienda"><a href="tienda.html">TIENDA</a></li>
+                    <li class="inicio"><a onClick={() => cambiaRuta('/')}>INICIO</a></li>
+                    <li class="historia"><a onClick={() => cambiaRuta('/Historia')}>HISTORIA</a></li>
+                    <li class="galeria"><a onClick={() => cambiaRuta('/Galeria')}>GALERIA</a></li>
+                    <li class="tienda"> <a href="#seccionProductos"> TIENDA </a></li>
 
                 </ul>
 

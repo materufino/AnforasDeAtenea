@@ -1,28 +1,33 @@
+import { useState } from "react"
 import styled from "styled-components"
-
-
-
+import PopUp from "./PopUp"
 
 
 
 const ContenedorCard = styled.div`
-    box-shadow: 0px -19px 5px -20px rgba(194, 193, 193, 0.26);
+    border-top: 1px solid lightgray;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
         @media (min-width:37.500em) {
+             :hover{
+        box-shadow: inset 0px 0px 5px 3px rgba(230,230,230,1);
+    }
          
         }
         @media(min-width:48rem) {
             justify-content: space-around;
         }
         @media(min-width:61.93em) {
+            border-top: none;
             width: 45%;
-            box-shadow: -3px 0px 5px 0px rgba(194, 193, 193, 0.26);
+            box-shadow:0px 0px 5px 1px rgba(194, 193, 193, 0.26);  
             margin-right: 10px;
+            margin-bottom: 10px;
         } 
+   
 `
 
 const ContenedorTexto = styled.div`
@@ -44,13 +49,14 @@ const TituloProducto = styled.h4`
         font-family: 'Cinzel', serif;
         font-size: 25px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        min-height: 35px;
     `
 
 const Price = styled.span`
         position: absolute;
         bottom: 20px;
-        left: 0;
+        left: 0px;
         background-color: rgb(54, 53, 53);
         padding: 7px 20px;
         text-align: center;
@@ -60,30 +66,60 @@ const Price = styled.span`
         color: #fff;
         border-radius: 5px;
         box-shadow: -10px 20px 15px - 10px rgba(27, 6, 216, 0.3);
+        @media (min-width:37.500em) {
+             left: 20px;
+        }
+        @media(min-width:48rem) {
+            
+        }
+        @media(min-width:61.93em) {
+           
+        } 
+        
+        
+        
+        
         :hover{
             text-shadow: 0px 0px 10px #797979;
             padding-right: 22px;
             transition: 0.2s;
         }
+
     `
 
 const Imagen = styled.img`
         width: 200px;
         margin-bottom: 20px;
     `
+const Menu = styled.ul`
+ display: flex;
+  justify-content: center;
 
 
-
+`
 
 
 const CardProducto = ({ producto, img, descripcion, precio }) => {
+
+    const [estadoPopUp, setEstadoPopUp] = useState(false)
+
 
     return (
         <ContenedorCard>
             <ContenedorTexto>
                 <TituloProducto>{producto}</TituloProducto>
                 <DescProducto>{descripcion}</DescProducto>
-                <Price>{precio}</Price>
+
+                <Price>
+                    <Menu>
+                        <li>
+                            <span onClick={() => setEstadoPopUp(!estadoPopUp)}>
+                                Consultar
+                            </span>
+                        </li>
+                    </Menu>
+                </Price>
+                {estadoPopUp && <PopUp estado={estadoPopUp} setEstado={setEstadoPopUp} />}
             </ContenedorTexto>
             <Imagen src={img} />
 

@@ -1,4 +1,3 @@
-import frantoioVidrio from '../Assets/frantoioVidrio.jpg'
 import products from './ListaProductos'
 import CardProducto from './componentesPequeños/CardProducto'
 import styled from 'styled-components'
@@ -13,7 +12,6 @@ const ContenedorProductos = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0px 100px 10px -3px rgb(105, 105, 105);
-    
     padding: 15px;
 `
 
@@ -29,7 +27,7 @@ const TituloProductos = styled.h2`
 
 
 const Productos = () => {
-    const [botellas, setBotellas] = useState(products)
+    const [botellas] = useState(products)
     console.log(botellas)
     return (
         <><TituloProductos>PRODUCTOS</TituloProductos>
