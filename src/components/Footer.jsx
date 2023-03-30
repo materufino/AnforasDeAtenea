@@ -16,9 +16,8 @@ const Footer = () => {
                 <div className={estilos.informacion}>
                     <h5>Contactá con nosotros</h5>
                     <h6>anforasdeatenea@gmail.com</h6>
-                    <h6><span> Tel.</span> +54 221 483-0377 </h6>
-                    <h6><span>Celular: </span>+54 9 221 598‑7698 </h6>
-                    <h6><span>Celular 2:</span> +54 9 221 596-2957 </h6>
+                    <h6><span>Tel: </span>+54 9 221-463-5023 </h6>
+                    <h6><span>Tel 2: </span>+54 9 221-507-9240 </h6>
                     <h6>San Rafael - Mendoza - Argentina</h6>
                     <h6><span>Administracion Central:</span> Calle 39 n°735 - La Plata - Pcia. Bs.As.</h6>
                     <h6><span>Producción:</span> Ruta 143 n° 13012 – Capitan Montoya – San Rafael – Mendoza</h6>
