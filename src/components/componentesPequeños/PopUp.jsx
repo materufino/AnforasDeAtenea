@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import React from "react";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
 
 const Overlay = styled.div`
     width: 100vw;
@@ -79,13 +83,12 @@ const ContenedorOpciones = styled.div`
     margin-bottom: 30px;
 `
 const BotonW = styled.a`
-    width: 30px;
-    height: 30px;
     color: #ffffff;
     background-color: #000000;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
+    font-size: 25px;
     i{
         margin-left: 10px;
     }
@@ -118,16 +121,13 @@ const PopUp = ({ estado, setEstado }) => {
                     <EncabezadoPopUp>
                         <h3>Seleccionar un Contacto</h3>
                     </EncabezadoPopUp>
-
-                    <BotonCerrar onClick={() => setEstado(!estado)}><i class="fa-solid fa-x"></i></BotonCerrar>
-
+                    <BotonCerrar onClick={() => setEstado(!estado)}><FontAwesomeIcon icon={faX} /></BotonCerrar>
                     <ContenedorOpciones>
                         <ContenedorUnaOpcion>
-                            <BotonW href='https://api.whatsapp.com/send?phone=+5492214635023&text=Hola!%20Quisiera%20saber%20el%20precio%20de%20los%20aceites%20y%20como%20obtenerlos.%20Muchas%20gracias!' target="_blank">Pablo<i class="fa-brands fa-whatsapp"></i></BotonW>
+                            <BotonW href='https://api.whatsapp.com/send?phone=+5492214635023&text=Hola!%20Quisiera%20saber%20el%20precio%20de%20los%20aceites%20y%20como%20obtenerlos.%20Muchas%20gracias!' target="_blank"> Pablo </BotonW>
                         </ContenedorUnaOpcion>
                         <ContenedorUnaOpcion>
-
-                            <BotonW href='https://api.whatsapp.com/send?phone=+5492215079240&text=Hola!%20Quisiera%20saber%20el%20precio%20de%20los%20aceites%20y%20como%20obtenerlos.%20Muchas%20gracias!' target="_blank"> Mauro <i class="fa-brands fa-whatsapp"></i></BotonW>
+                            <BotonW href='https://api.whatsapp.com/send?phone=+5492215079240&text=Hola!%20Quisiera%20saber%20el%20precio%20de%20los%20aceites%20y%20como%20obtenerlos.%20Muchas%20gracias!' target="_blank"> Mauro <i class="fa-brands fa-square-whatsapp"></i></BotonW>
                         </ContenedorUnaOpcion>
                     </ContenedorOpciones>
 

@@ -4,7 +4,6 @@ import Historia from "./components/Historia"
 import Galeria from "./components/Galeria"
 import Home from './components/Home';
 
-
 function App() {
 
   return (
