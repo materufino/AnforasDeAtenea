@@ -38,7 +38,7 @@ const ImageContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-
+  box-shadow: 0px 10px 19px -3px rgb(105, 105, 105);
   img {
     height: 100%;
     width: 100%;
@@ -51,7 +51,8 @@ const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   
 `;
 
@@ -133,7 +134,7 @@ const Galeria = () => {
     <TextContainer>
 
       <SliderText>
-        Bienvenido a nuestra producción de aceite de oliva. Estamos encantados de compartir con usted algunas de las hermosas fotos que hemos tomado en nuestra finca. Nos apasiona la fotografía y estamos muy agradecidos con nuestros clientes por enviarnos sus mejores capturas.
+        Bienvenidos a nuestra galeria, estas son algunas fotografías que hemos tomado de nuestra finca y estamos encantados de compartirlas con ustedes.
       </SliderText>
 
     </TextContainer>

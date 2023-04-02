@@ -21,7 +21,7 @@ const Overlay = styled.div`
 const ContenedorPopUp = styled.div`
     display: flex;
     width: 85%;
-    min-height: 100px;
+    min-height: 150px;
     background-color: #fff;
     position: relative;
     border-radius:5px;
@@ -29,6 +29,7 @@ const ContenedorPopUp = styled.div`
     display: flex;
     flex-direction: column;
     border: 1px inset #706261;
+    align-items: center;
 
     @media (min-width:37.500em) {
              max-width: 500px;
@@ -76,36 +77,39 @@ const BotonCerrar = styled.button`
 
 
 const ContenedorOpciones = styled.div`
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 30px;
+
+    margin-top: 40px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 80px;
+   
 `
 const BotonW = styled.a`
-    color: #ffffff;
-    background-color: #000000;
-    padding: 10px;
+    
+    padding: 15px;
+    background-color:rgb(54, 53, 53);
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
-    font-size: 25px;
-    i{
-        margin-left: 10px;
-    }
+    color: white;
     :hover{
-        color: #000000;
-        background-color:#00bb2d  ;
+        box-shadow:0px 10px 19px -3px rgb(105, 105, 105) ;
+        border-radius:0px;
         transition: 0.5s;
-        box-shadow: 0px 0px 18px 0px rgba(128,128,128,1);
+        background-color:#00bb2d  ;
     }
+
 `
 
 const ContenedorUnaOpcion = styled.div`
    font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
    
-    
 `
+const StyledP = styled.p`
+  color: #5a5a5ac7;
 
+`
 
 const PopUp = ({ estado, setEstado }) => {
 
@@ -122,10 +126,14 @@ const PopUp = ({ estado, setEstado }) => {
                         <h3>Seleccionar un Contacto</h3>
                     </EncabezadoPopUp>
                     <BotonCerrar onClick={() => setEstado(!estado)}><FontAwesomeIcon icon={faX} /></BotonCerrar>
+
+                    <StyledP>Serás redirigido a WhatsApp</StyledP>
+
                     <ContenedorOpciones>
                         <ContenedorUnaOpcion>
                             <BotonW href='https://api.whatsapp.com/send?phone=+5492214635023&text=Hola!%20Quisiera%20saber%20el%20precio%20de%20los%20aceites%20y%20como%20obtenerlos.%20Muchas%20gracias!' target="_blank"> Pablo </BotonW>
                         </ContenedorUnaOpcion>
+
                         <ContenedorUnaOpcion>
                             <BotonW href='https://api.whatsapp.com/send?phone=+5492215079240&text=Hola!%20Quisiera%20saber%20el%20precio%20de%20los%20aceites%20y%20como%20obtenerlos.%20Muchas%20gracias!' target="_blank"> Mauro <i class="fa-brands fa-square-whatsapp"></i></BotonW>
                         </ContenedorUnaOpcion>
