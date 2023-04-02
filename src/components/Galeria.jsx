@@ -134,7 +134,8 @@ const Galeria = () => {
     <TextContainer>
 
       <SliderText>
-        Bienvenidos a nuestra galeria, estas son algunas fotografías que hemos tomado de nuestra finca y estamos encantados de compartirlas con ustedes.
+        Bienvenido a ANFORAS DE ATENEA, les presentamos nuestra Planta de Producción de aceite de oliva. Estamos encantados de compartir con usted algunas de las hermosas fotos que hemos tomado en nuestra finca. Nos apasiona la fotografía y estamos muy agradecidos con nuestros clientes por enviarnos sus mejores capturas.
+
       </SliderText>
 
     </TextContainer>

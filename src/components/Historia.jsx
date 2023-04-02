@@ -43,6 +43,9 @@ const Parrafo = styled.p`
     font-size:20px; 
     margin-top: 40px;
     text-align: center;
+    span{
+        font-weight: 800;
+    }
 `
 const ContenedorImagen = styled.div`
     width: 100%;
@@ -81,9 +84,9 @@ const Historia = () => {
             <NavBarComponentes />
             <Contenedor>
                 <Titulo>Nuestra Historia</Titulo>
-                <Parrafo>«Seré breve…» dijo el del discurso interminable. Pero en este caso es así, ya que nuestra historia como productores de aceite es muy reciente. Somos un establecimiento que por años se dedicó a la producción primaria únicamente, pero queríamos poder tener nuestro producto para ofrecer al consumo, sabiendo que en él pondríamos toda nuestra pasión y esfuerzo. Pasión y esfuerzo que rindieron sus frutos inmediatamente ya que, una vez analizadas las muestras por el INTI y a la luz de los resultados, decidimos participar del prestigioso certamen internacional OLIVINUS 2018 con nuestros varietales, obteniendo un Gran Prestigio Oro para nuestro Frantoio y Prestigio Oro para el Empeltre.
-                    Nuestro establecimiento de elaboración es de pequeña capacidad, ya que queríamos ser capaces de monitorear al detalle cada etapa para lograr nuestro objetivo: calidad por sobre cantidad.
-                    Los importantísimos reconocimientos obtenidos no hicieron más que estimularnos para redoblar nuestro esfuerzo en seguir por el camino que nos habíamos trazado desde el comienzo: producir Aceite de Oliva Virgen Extra de la mayor calidad y ampliar nuestra capacidad sólo cuando tuviéramos las pruebas de tener lo que buscábamos. Pruebas que se lograron con creces.
+                <Parrafo>«Seré breve…» dijo el del discurso interminable. Pero en este caso es así, ya que nuestra historia como productores de aceite es muy reciente. Somos un establecimiento que por años se dedicó a la producción primaria únicamente, pero queríamos tener nuestro producto para ofrecer al consumo, sabiendo que en él pondríamos toda nuestra pasión y esfuerzo. Pasión y esfuerzo que quedaron plasmados en el certamen Internacional OLIVINUS 2018, obteniendo un Gran Prestigio Oro para nuestro Frantoio y Prestigio Oro para el Empeltre.
+                    Contamos con una almazara de elaboración de pequeña capacidad, que nos permite monitorear detalladamente cada etapa del proceso de extracción para lograr nuestro objetivo:<span> calidad por sobre cantidad</span>.
+                    Los importantísimos reconocimientos obtenidos no hicieron más que estimularnos para redoblar nuestro esfuerzo en seguir por el camino que habíamos trazado desde el comienzo: producir Aceite de Oliva Virgen Extra de la mayor calidad
                 </Parrafo>
             </Contenedor>
 
