@@ -102,7 +102,6 @@ const BotonW = styled.a`
 
 const ContenedorUnaOpcion = styled.div`
    font-size: 20px;
-   
     
 `
 
