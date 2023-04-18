@@ -11,7 +11,14 @@ const ContenedorCard = styled.div`
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
+
+        @media (min-width:20.00em) {
+             justify-content: center;
+        }
+        
+
         @media (min-width:37.500em) {
+            
              :hover{
         box-shadow: inset 0px 0px 5px 3px rgba(230,230,230,1);
     }
@@ -31,7 +38,16 @@ const ContenedorCard = styled.div`
 `
 
 const ContenedorTexto = styled.div`
-        width: 50%;
+        
+        @media (min-width:20.00em) {
+            width: 80%;
+             justify-content: center;
+        }
+
+        @media (min-width:37.500em) {
+                width: 50%;
+             justify-content: center;
+        }
         @media(min-width:61.93em) {
             width: 85%;
             min-height: 250px;
@@ -75,7 +91,6 @@ const Price = styled.span`
         @media(min-width:61.93em) {
            
         } 
-        
         
         
         
