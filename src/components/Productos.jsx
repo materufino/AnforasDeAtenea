@@ -24,11 +24,8 @@ const TituloProductos = styled.h2`
     
 `
 
-
-
 const Productos = () => {
     const [botellas] = useState(products)
-    console.log(botellas)
     return (
         <><TituloProductos>PRODUCTOS</TituloProductos>
             <ContenedorProductos>
