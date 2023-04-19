@@ -85,13 +85,13 @@ const Olivinus = () => {
                 <ContainerUnaMedalla>
                     <TituloMedalla>Prestigio Oro</TituloMedalla>
                     <ParrafoMedalla>Medalla otorgada al aceite de oliva Empeltre Ánforas de Atenea</ParrafoMedalla>
-                    <Imagen src={prestigioOro} />
+                    <Imagen src={prestigioOro} loading="lazy" alt="Medalla prestigio Oro" />
                 </ContainerUnaMedalla>
 
                 <ContainerUnaMedalla>
                     <TituloMedalla>Gran Prestigio Oro</TituloMedalla>
                     <ParrafoMedalla>Medalla otorgada al aceite de oliva Frantoio Ánforas de Atenea</ParrafoMedalla>
-                    <Imagen src={granPrestigioOro} />
+                    <Imagen src={granPrestigioOro} loading="lazy" alt="Medalla Gran Prestigio Oro" />
                 </ContainerUnaMedalla>
             </ContenedorMedallas>
         </>

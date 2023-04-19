@@ -136,7 +136,7 @@ const CardProducto = ({ producto, img, descripcion, precio }) => {
                 </Price>
                 {estadoPopUp && <PopUp estado={estadoPopUp} setEstado={setEstadoPopUp} />}
             </ContenedorTexto>
-            <Imagen src={img} />
+            <Imagen src={img} alt={producto} loading="lazy" />
 
         </ContenedorCard>
     )

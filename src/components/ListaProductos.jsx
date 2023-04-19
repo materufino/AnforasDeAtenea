@@ -1,4 +1,4 @@
-import frantoio from '../Assets/frantoioSinFondo.png'
+import frantoio from '../Assets/frantoiosinfondo.png'
 import empeltre from '../Assets/arbequina-sinfondo.png'
 import arbequina from '../Assets/arbequina-removebg.png'
 import blend from '../Assets/blend3-sinfondo.png'

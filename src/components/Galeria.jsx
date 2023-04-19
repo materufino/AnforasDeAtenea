@@ -143,7 +143,7 @@ const Galeria = () => {
     <SliderContainer>
 
       <ImageContainer>
-        <SliderImage src={imagenes[currentImageIndex]} alt="Slider" />
+        <SliderImage src={imagenes[currentImageIndex]} loading="lazy" alt="Slider" />
       </ImageContainer>
 
       <ButtonContainer>
